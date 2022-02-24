@@ -1,18 +1,18 @@
 # School
 
-This submission will be composed of three parts:
+This repository contains School, a submission to the Mapsmap challenge, and will be composed of three parts:
 
-(1) A whitepaper which discusses the questions posed by the Mapsmap challenge in depth, then proceeds to propose a comprehensive technical solution.
+1. A whitepaper which discusses the questions posed by the Mapsmap challenge in depth, then proceeds to propose a comprehensive technical solution.
 
-(2) An simple, introductory implementation of the solution described in the whitepaper in the form of a mobile app which includes a walkthrough.
+2. An simple, introductory implementation of the solution described in the whitepaper in the form of a mobile app which includes a walkthrough.
 
-(3) Supplementary materials that will be referred to in the course of the walkthrough.
+3. Supplementary materials that will be referred to in the course of the walkthrough.
 
 It is recommended that one goes through the submission in the order provided above, starting with the whitepaper.
 
 ## Dedication
 
-Special thanks to the organisers of the Mapsmap challenge for proposing the initial idea for School and facilitating this competition.
+Special thanks to the organisers of the Mapsmap challenge for proposing the initial idea for School and facilitating the competition that inspired its development.
 
 ## License
 
