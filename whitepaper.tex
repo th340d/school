@@ -1,0 +1,104 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{School: A Crowd-Based Capital Allocation System (Draft)}
+\author{David Hopkins}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+While there are evident economic and social benefits to combining both crowdfunding and crowdsourcing into a single online marketplace, to date these networks have largely been treated as independent. This paper considers whether the missing element is the availability of the appropriate tools to bring the two forms of activity in together, and in particular the use of diagrams as a means of organizing and directing capital and labor by communities. After exploring the nature and function of diagrams as a tool, we find that they can indeed be used for this purpose and two novel types of diagram are introduced explicitly to that end: Directive Trees and DQC (directive-question-command) Diagrams. Using these tools, we proceed to outline a comprehensive technical solution combining crowdsourcing and crowdfunding, which we title School. We briefly discuss matters pertinent to how such a system might be implemented and conclude with thoughts about the future of crowdfunding and crowdsourcing.
+
+\end{abstract}
+
+\section{Introduction}
+
+Crowdfunding and crowdsourcing are two strategies that have used social networking technology to allowed economic actors to achieve outcomes more quickly. Each of the two kinds of platform does this by matching donors of money (in the case of crowdfunding) or labour (in the case of crowdsourcing) with those who are able to provide them with value in return. They do this by making listings as easy as possible to create, browse and engage with and pulling together as wide and deep a pool of users as possible. As the two forms of technology use similar dynamics, one is led naturally to wonder whether they may be combined together into a single platform. If it can be achieved successfully, the advantages of such a system are obvious: they will offer a considerable boost to productivity by improving the momentum with which value moves around the economy. It is likely that community with such a tool available would be able to pursue a wider and deeper range of economic activities. In turn, this greater flexibility would also lead to the employment of a considerable amount of otherwise latent talent and deliver considerable value in return for otherwise under-deployed capital.
+
+It is also worth mentioning that the ability of a community to bring together efforts for petitioning for capital and deploying capital suggests that the community is able to take on a level of self-sufficiency that may be otherwise unavailable. It is not only easier for individuals to manage their own personal lives but for them to get a bird's eye view of the interests of the broader community, encouraging their greater consideration of and skill in addressing issues of civics. 
+In such a way, the platform may take on "a life on its own."
+
+Given that the benefits to doing so seem obvious, one then wonders why it is that such a solution has not been implemented already, particularly given that crowdfunding and crowdsourcing are now reasonably well-understood and offered by competitive industries.
+
+We propose that there has been a legitimate limitation that has impeded a crowd-based capital allocation system having been implemented to date in the form of a dearth of methods to elegantly unify crowdfunding listings and crowdsourcing listings. Without an unified internal representation of these two forms of data, the cost of offering to cater for both markets is prohibitive, as little additional value is unlocked.
+
+However, recently a possible solution to the issue of data representation was posited by Protocol Labs in the form of the Mapsmap challenge. In particular, the challenge organizers posed an open question to its audience as to whether diagrams could be used to coordinate such activities and as the basis for an app combining the two markets.
+
+Due to their lateral nature, diagrams are a class of tool for representing data that is likely to be under-utilized in the early 21st century. Using diagrams, people find links between seemingly disparate entities to spawn new ideas and identify patterns that would otherwise be obscured. These qualities make diagrams a highly-effective tool for planning for the future and innovation: for striving for the exceptional rather than improving the average.
+
+Protocol Labs' position leads us to consider whether the inspirational power of diagrams, unlocking unconsidered possibilities for exploration that pull us forward into the future, could be sufficient to overcome whatever barriers that have prevented crowdsourcing and crowdfunding from being united and allow people to have a greater level of economic autonomy than ever before.
+
+In this paper, we provide a answer to this question. More exactly, we confirm that the proposition is generally sound. However, we also go further than that, and explain exactly how it may be done.
+
+To do this, we address the elements of the problem that, as it turns out, are counterintuitive, and once clarity is provided to disassemble some  minor suppositions relating to what an effective solution must entail, we shall observe the correct solution naturally revealing itself.
+
+\section{Challenges}
+
+\subsection{Relating to the utility of diagrams}
+
+The first supposition we shall address is the idea that a useful software tool can be constructed in which a large diagram is worked on remotely by a crowd of people that is in turn useful for a crowd of people to use as a tool to coordinate work.
+
+We refute this presumption by establishing the following principle:
+
+\begin{quote}
+
+\textit{The decipherability of a diagram is inversely and exponentially correlated to the resolution of the data which it used to depict.
+}
+\end{quote}
+
+By way of illustration, a line chart with a single line on it is exponentially more readable than a chart with ten lines on it. By the time that the line chart reaches one hundred lines, it has already lost almost all of its utility.
+
+Similarly, a two-dimensional star chart is exponentially easier to intuit conclusions from than a three-dimensional one and a four-dimensional one is practically unintelligible.
+
+One finds that this dynamic continues regardless of the type of diagram that one is considering.
+
+\subsection{Relating to the functionality of diagrams}
+
+The second supposition is that it is useful to represent data at two different scales: classes of new technologies (such as has been represented on tech trees historically) and units of work that are suitable for the typical members of a crowdsourcing app's worker population, on a single diagram.
+
+We dispose of this idea quickly by calculating the difference between a new class of technology and a unit of work that can be comfortably handled by an individual. we may do this take a representative sample of each, such as the notion of "scientific calculators (including the invention, adoption and maturity product of the product and industry sufficiently for future technologies to be built on top of it)" and "fixing a roof tile" as an example of each and find the difference to be something in the order of 10^9.
+
+To represent data at every scale in between these two extremes at sufficient resolution to be useful for the user is untenable.
+
+\subsection{Relating to the nature of progress}
+
+In addition to the two previous refutations being a strong argument against the utility of universal central diagrams, and even more-so when considered in combination, there is a fundamental point to be made with relation to how technological progress occurs. In particular, it is make the following two assumptions which we consider traps:
+
+(1) that the majority of the work required relating to any technological innovation for civilization to be able to progress beyond it is related to the conception of the invention, and, relatedly:
+
+(2) that technological innovation is haphazard and entirely unpredictable, with there being multiple possible sequences whereby technology may be adopted.
+
+While the single most valuable act involved in the development of a new technology may be the moment of inspiration at which it is invented, which perhaps concludes at the moment when a single person becomes convinced that the technology works to address a particular problem while being able to articulate every element of the solution required for it to work (or in sufficient detail that a layperson could intuit the rest, at least), this is naturally only the beginning of a technology's lifecycle.  The tendency for inventors to over-estimate the value of having a good idea and under-estimate the effort involved in finding a market for that idea has been well-documented.
+
+During the course of its journey to market, the product goes through many iterations and an entire infrastructure is built around it to be enable to be produced. A good technology will then have an entire industry arise as an ecosystem which allows it to be developed further, while all the processes surrounding it are refined. Even for small innovations, it is only once the technology has reached a certain level of penetration and a certain level of sophistication from its necessarily crude beginnings that others can take advantage of it and when innovating upon it, it is likely to be an entire ecosystem, including the marketers, manufacturers, regulators and consumers, that one is ultimately basing an innovation upon.
+
+If we present the steelman of the alternative view, by asking ourselves whether this same dynamic applies for the innovation of ideas or for software, both of which are multi-faceted and can build upon themselves without seemingly needing much contact with the rest of the world, we find that this falls apart by addressing the second of the two points above.
+
+We find that, entirely unlike a circumstance in which one knows the answer at the outset, the act of creativity (which includes any projection of how one wishes to manoeuvre the world towards a better future) necessitates that actions be built upon prior actions. In particular, every act of human creation is, by necessity, an act of combining pre-existing things in a novel way. The further into the future one projects activities, the more things that don't exist already are combined together and so the more context is required for any diagram which would seek to communicate it (and diagrams can't handle complexity).
+
+Instead, to discuss the future in any meaningful way (which ultimately means to actually be talking about the present, as the future does not have any meaning), one must refer to trends, patterns, directions and outcomes. For example, it is perfectly fine to say, "I will go for a stroll around my neighbourhood to relax later this afternoon," and yet it requires an unprecedented amount of planning to say with confidence, "I will go for a stroll around my neighbourhood to relax 8,000 hours from now," if there were any point in saying it at all.
+
+Instead, one refers to cycles and trends. One may say, "Every year, on my wedding anniversary, I commit to buying my spouse a gift that revitalizes and deepens our love for one another," or, "I will walk for an hour every day until I have found my ideal weight."
+
+Cycles and trends, however, are not particularly well expressed by knowledge diagrams such as trees, unless their explicit purpose is to demonstrate a particular cycle or trend and they are sliced down accordingly.
+
+We also see that the actual evolution of technologies, and particularly the order in which they become a part of the fabric of society, obeys patterns with complete reliability. In other words, while it may be possible for a diagram to be used to plan out further and further into the future (provided that it is done by an individual and not a crowd, so that context can be foregone), looking further into the future is all that the diagram achieves (and indeed one can imagine the possibility of getting lost in it). As soon as one attempts to implement the contents of the diagram in any real fashion, one quickly finds that no-one else understands a word of it. One must go back and execute the mundane and comparatively gruelling work of actually implementing each technology and meanwhile the diagram gets put in the drawer.
+
+There is no way around putting the work in to every technology and there is also no way of communicating what work is to be done to implement any given technology far into the future. One relies on diagrams or any other form of communication to describe things in the cleanest and broadest terms, which is in terms of principles and objectives, and not in terms of actions.
+
+Finally, as to the point of technologies always being successfully adopted in unaltering patterns (perhaps regardless of their time of invention), one may find this substantiated in the history every of possible arena, including the silhouettes of women's dresses (which changes from pencil-like, to bustle-like to hoop-like and back to pencil-like) to communications technology (which changes from being centralizing to decentralizing and back to centralizing) to software products (which bundle and then unbundle and then bundle again).
+
+\end{document}
