@@ -1,6 +1,6 @@
 # School
 
-This repository contains School, a submission to the Mapsmap challenge, and will be composed of three parts:
+This repository contains David Hopkins' submission to the Mapsmap challenge, titled School, and will be composed of three parts:
 
 1. A whitepaper which discusses the questions posed by the Mapsmap challenge in depth, then proceeds to propose a comprehensive technical solution.
 
