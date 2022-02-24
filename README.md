@@ -4,7 +4,7 @@ This repository contains School, David Hopkins' submission to the Mapsmap challe
 
 1. A whitepaper which discusses the questions posed by the Mapsmap challenge in depth, then proceeds to propose a comprehensive technical solution.
 
-2. An simple, introductory implementation of the solution described in the whitepaper in the form of a mobile app, which includes a walkthrough.
+2. An simple, introductory implementation of a solution such as described by the whitepaper in the form of a mobile app, which includes a walkthrough.
 
 3. Supplementary materials that will be referred to in the course of the walkthrough.
 
