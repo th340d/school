@@ -4,11 +4,11 @@ While the whitepaper contains an Abstract, its language remains quite technical,
 
 Firstly, diagrams get exponentially harder to read as more detail is added to them. This means that they are good for uses where not a lot of detail is required.
 
-Secondly, the times when not a lot of detail are required are when one is taking a super-broad and a super-specific perspective, and most of all when representing one's own data (because then one doesn't need to include a lot of context).
+Secondly, times when not a lot of detail are required are those when one is taking either a super-broad and a super-specific perspective, and most of all when representing one's own data (because then one doesn't need to include a lot of context).
 
-Thirdly, everything that can be expressed as a diagram can be expressed as a list and vice versa. To begin with, it is less important what tool we use than it is to determine how we can actually represent the process of turning ideas into discrete, executable tasks cleanly, in terms of homogenous data that can be entered into a database.
+Thirdly, everything that can be expressed as a diagram can be expressed as a list and vice versa. In order to begin, it is less important what tool we use than it is to determine how we can actually represent the process of turning ideas into discrete, executable tasks cleanly, in terms of homogenous data that can be entered into a database.
 
-Fourthly, the way that we achieve this is by turning our definition of what an "idea" is into four discrete stages, each of which increases in its level of sophistication and may be represented by one of the four forms of end-of-sentence punctuation.
+Fourthly, the way that we achieve this is by turning our definition of what an "idea" is into four discrete stages, each of which increases progressively in its level of sophistication and may be represented by one of the four types of end-of-sentence punctuation.
 
 These four stages are, as follows:
 
