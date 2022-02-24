@@ -30,7 +30,7 @@ Eighthly, there are still some interesting things we can use the public data for
 
 Ninthly, the entire notion of using diagrams to manage crowd capital allocation is exceedingly valuable and similar technology can eventually be expanded to form the basis of entirely decentralized search recommendations.
 
-Naturally, for more information on any of these points, refer to the whitepaper.
+Tenthly, for more information on any of these points, naturally, refer to the whitepaper.
 
 Regards,
 
