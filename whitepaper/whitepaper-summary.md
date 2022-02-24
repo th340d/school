@@ -1,3 +1,5 @@
+# Summary
+
 While the whitepaper contains an Abstract, its language remains quite technical, so I will also provide a quick and more accessible summary of its contents here.
 
 Firstly, diagrams get exponentially harder to read as more detail is added to them. This means that they are good for uses where not a lot of detail is required.
@@ -31,4 +33,5 @@ Ninthly, the entire notion of using diagrams to manage crowd capital allocation 
 Naturally, for more information on any of these points, refer to the whitepaper.
 
 Regards,
+
 David Hopkins
