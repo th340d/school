@@ -16,7 +16,7 @@ Special thanks to the organisers of the Mapsmap challenge for proposing the init
 
 ## License
 
-### App
+### School App
 
 Copyright (c) 2022 David Hopkins and others
 
@@ -43,6 +43,6 @@ Supplementary materials to the Sotware are included under the terms of
 Fair Use and for use as a reference. Trademarks within these materials
 remain the property of their respective owners.
 
-### Whitepaper
+### School Research Paper
 
 Copyright (c) 2022 David Hopkins
