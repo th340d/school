@@ -1,10 +1,10 @@
 # School
 
-This repository contains School, David Hopkins' submission to the Mapsmap challenge, and will be composed of three parts:
+This repository contains David Hopkins' submission to the Mapsmap challenge, and will be composed of three parts:
 
 1. A whitepaper which discusses the questions posed by the Mapsmap challenge in depth, then proceeds to propose a comprehensive technical solution.
 
-2. A simple, introductory implementation of a solution such as described by the whitepaper in the form of a mobile app, which includes a walkthrough.
+2. A simple demonstration of the solution described by the whitepaper in the form of a mobile app, which includes a walkthrough.
 
 3. Supplementary materials that will be referred to in the course of the walkthrough.
 
@@ -39,6 +39,10 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-### Research paper
+Supplementary materials to the Sotware are included under the terms of
+Fair Use and for use as a reference. Trademarks within these materials
+remain the property of their respective owners.
+
+### Whitepaper
 
 Copyright (c) 2022 David Hopkins
