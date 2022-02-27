@@ -8,78 +8,93 @@
 % Replace `letterpaper' with `a4paper' for UK/EU standard size
 \usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 
+\usepackage{blindtext}
+\usepackage{multicol}
+
+
+
 % Useful packages
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
-\title{School: A Crowd-Based Capital Allocation System (Draft)}
-\author{David Hopkins}
+\title{School: A Crowd-Based Capital Allocation System}
+\author{David Hopkins \\ th340d.co}
+\date{}
 
 \begin{document}
 \maketitle
 
+\begin{multicols}{2}
+
+
+
 \begin{abstract}
-While there are evident economic and social benefits to combining both crowdfunding and crowdsourcing into a single online marketplace, to date these networks have largely been treated as independent. This paper considers whether the missing element is the availability of the appropriate tools to bring the two forms of activity in together, and in particular the use of diagrams as a means of organizing and directing capital and labor by communities. After exploring the nature and function of diagrams as a tool, we find that they can indeed be used for this purpose and two novel types of diagram are introduced explicitly to that end: Directive Trees and DQC (directive-question-command) Diagrams. Using these tools, we proceed to outline a comprehensive technical solution combining crowdsourcing and crowdfunding, which we title School. We briefly discuss matters pertinent to how such a system might be implemented and conclude with thoughts about the future of crowdfunding and crowdsourcing.
+While there are evident economic and social benefits to combining both crowdfunding and crowdsourcing activities into a single online marketplace, to date these networks have largely been treated as independent. This paper considers whether a dearth of appropriate tools has been preventing these two forms of activity from being brought together, and in particular considers the utility of diagrams as a new means of organize and directing capital and labor. After exploring the nature and function of diagrams as a planning tool, we find that they can be used effectively for this purpose and two novel types of diagram are introduced explicitly to that end: Directive Trees and DQC (Directive-Question-Command) Diagrams. Equipped with these tools, we proceed to outline a comprehensive technical solution that combines crowdsourcing and crowdfunding, which we entitle School. We briefly discuss matters pertinent to the implementation of the School system and conclude with thoughts about the future of crowdfunding and crowdsourcing technologies.
 
 \end{abstract}
 
 \section{Introduction}
 
-Crowdfunding and crowdsourcing are two strategies that have used social networking technology to allowed economic actors to achieve outcomes more quickly. Each of the two kinds of platform does this by matching donors of money (in the case of crowdfunding) or labour (in the case of crowdsourcing) with those who are able to provide them with value in return. They do this by making listings as easy as possible to create, browse and engage with and pulling together as wide and deep a pool of users as possible. As the two forms of technology use similar dynamics, one is led naturally to wonder whether they may be combined together into a single platform. If it can be achieved successfully, the advantages of such a system are obvious: they will offer a considerable boost to productivity by improving the momentum with which value moves around the economy. It is likely that community with such a tool available would be able to pursue a wider and deeper range of economic activities. In turn, this greater flexibility would also lead to the employment of a considerable amount of otherwise latent talent and deliver considerable value in return for otherwise under-deployed capital.
+Crowdfunding and crowdsourcing are both tactics that have utilised social networking technology to allow economic actors to achieve outcomes more quickly. Platforms catering to each of these two strategies match donors of resources (money in the case of crowdfunding and labor in the case of crowdsourcing) with those who are able to provide them with value in return. This is typically achieved by (a) pulling together as wide and deep a pool of users as possible and (b) making listings as easy as possible to create, browse and engage with. As these two forms of technology use similar dynamics, one naturally wonders whether it is possible for them to be combined together into a single platform. If a system such as this was realizable, its advantages would be obvious: it would offer a considerable productivity boost to its userbase by improving the momentum with which value moves around the economy. It is likely that any community with such a tool available would be able to pursue a wider and deeper range of economic activities than otherwise and that, in turn, this greater level of flexibility would subsequently lead to the employment of a considerable amount of otherwise latent talent and capture returns on capital that would otherwise be unrealized.
 
-It is also worth mentioning that the ability of a community to bring together efforts for petitioning for capital and deploying capital suggests that the community is able to take on a level of self-sufficiency that may be otherwise unavailable. It is not only easier for individuals to manage their own personal lives but for them to get a bird's eye view of the interests of the broader community, encouraging their greater consideration of and skill in addressing issues of civics. 
-In such a way, the platform may take on "a life of its own."
+It is also worth mentioning that the ability of a community to bring together its efforts for petitioning for and deploying capital is likely related to its capacity of self-sufficiency. A single, open system makes it not only easier for individuals to manage their own personal lives but for them to get a bird's-eye view of the interests of the broader community, improving public awareness of civic issues and increasing the sophistication with which they are considered.
 
-Given that the benefits to doing so seem obvious, one then wonders why it is that such a solution has not been implemented already, particularly given that crowdfunding and crowdsourcing are now reasonably well-understood and offered by competitive industries.
+In such ways, the platform may begin to take on "a life of its own."
 
-We propose that there has been a legitimate limitation that has impeded a crowd-based capital allocation system having been implemented to date in the form of a dearth of methods to elegantly unify crowdfunding listings and crowdsourcing listings. Without an unified internal representation of these two forms of data, the cost of offering to cater for both markets is prohibitive, as little additional value is unlocked.
+Given that the synergies seem obvious, why is it that such a solution has not been implemented already, particularly given that crowdfunding and crowdsourcing mechanics are now reasonably well-understood and offered within competitive industries? We propose that there has been a legitimate limitation impeding the arisal of a general, crowd-based capital allocation platform in the form of a scarcity of efficient methods to integrate crowdfunding and crowdsourcing listings. Without a simple and unified approach to representing each of these two forms of data internally, the cost for platforms in catering to both markets becomes prohibitive.
 
-However, recently a possible solution to the issue of data representation was posited by Protocol Labs in the form of the Mapsmap challenge. In particular, the challenge organizers posed an open question to its audience as to whether diagrams could be used to coordinate such activities and as the basis for an app combining the two markets.
+However, recently a possible solution to the problem of data representation was posited by the organizers of the Mapsmap challenge. In particular, Protocol Labs posed an open question to its audience as to whether diagrams could be used to coordinate crowdfunding and crowdsourcing activities and as the basis for an app that combines the two markets \phantom{[1]}.
 
-Due to their lateral nature, diagrams are a class of tool for representing data that is likely to be under-utilized in the early 21st century. Using diagrams, people find links between seemingly disparate entities to spawn new ideas and identify patterns that would otherwise be obscured. These qualities make diagrams a highly-effective tool for planning for the future and innovation: for striving for the exceptional rather than improving the average.
+Given their lateral nature, it can be predicted with near-certainty that diagrams are a class of data representation tool that early 21st century society is under-utilizing \phantom{[2]}. Diagrams assist people to find links between seemingly disparate entities to spawn new ideas and to identify patterns that would otherwise be obscured. These qualities make diagrams a highly-effective tool for visioning and innovation - and for "striving for the exceptional" rather than "improving the average."
 
-Protocol Labs' position leads us to consider whether the inspirational power of diagrams, unlocking unconsidered possibilities for exploration that pull us forward into the future, could be sufficient to overcome whatever barriers that have prevented crowdsourcing and crowdfunding from being united and allow people to have a greater level of economic autonomy than ever before.
+Protocol Labs' proposition induces us to consider whether the power of diagrams (in revealing possibilities for future exploration that have previously gone unconsidered) could act as a kind of magnetic force that pulls us through whatever barriers have prevented crowdsourcing and crowdfunding from being united in the past - and allow people to have a greater level of economic autonomy than ever before.
 
-In this paper, we provide a answer to this question. More exactly, we confirm that the proposition is generally sound. However, we also go further than that, and explain exactly how it may be done.
+In this paper, we provide an answer to that question. More exactly, we confirm that the original proposition is sound. However, we also go much further, and explain exactly how it may be realized technologically.
 
-To do this, we address the elements of the problem that, as it turns out, are counterintuitive, and once clarity is provided to disassemble some  minor suppositions relating to what an effective solution must entail, we shall observe the correct solution naturally revealing itself.
+To do this, we address the elements of the problem of implementation that, as it turns out, are counter-intuitive, and these are disassembled and clarified, observe the correct solution naturally revealing itself.
 
 \section{Challenges}
 
 \subsection{Relating to the utility of diagrams}
 
-The first supposition we shall address is the idea that a useful software tool can be constructed in which a large diagram is worked on remotely by a crowd of people that is in turn useful for a crowd of people to use as a tool to coordinate work.
+The first presupposition we shall address is the idea that a useful software tool can be constructed in which a large diagram is worked on remotely by a crowd of people that is in turn useful for a crowd of people to use as a tool to coordinate work.
 
 We refute this presumption by establishing the following principle:
 
 \begin{quote}
 
-\textit{The decipherability of a diagram is inversely and exponentially correlated to the resolution of the data which it used to depict.
+\textit{Principle 1. The decipherability of a diagram is correlated inversely and exponentially to the resolution of the data which it attempts to depict.
 }
-\end{quote}
+\end{quote} \phantom{[FIGURE 1]}
 
-By way of illustration, a line chart with a single line on it is exponentially more readable than a chart with ten lines on it. By the time that the line chart reaches one hundred lines, it has already lost almost all of its utility.
+By way of illustration, a line chart with a single line on it is exponentially more readable than a chart with ten lines on it. By the time that the line chart reaches one hundred lines, it has already lost almost all of its utility. \phantom{[FIGURE 2]}
 
-Similarly, a two-dimensional star chart is exponentially easier to intuit conclusions from than a three-dimensional one and a four-dimensional one is practically unintelligible.
 
-One finds that this dynamic continues regardless of the type of diagram that one is considering.
+Similarly, a two-dimensional star chart is exponentially easier to intuit conclusions from than a three-dimensional one, while a four-dimensional one is practically unintelligible.
+
+One finds that this dynamic continues to exist regardless of the type of diagram that one is considering.
 
 \subsection{Relating to the functionality of diagrams}
 
-The second supposition is that it is useful to represent data at two different scales: classes of new technologies (such as has been represented on tech trees historically) and units of work that are suitable for the typical members of a crowdsourcing app's worker population, on a single diagram.
+The second presupposition to be addressed is that it is useful to represent data at the following two scales on a single diagram: (a) classes of new technologies (such as has been represented on tech trees historically) and (b) units of work that are suitable for the typical members of a crowdsourcing app's worker population.
 
-We dispose of this idea quickly by calculating the difference between a new class of technology and a unit of work that can be comfortably handled by an individual. we may do this take a representative sample of each, such as the notion of "scientific calculators (including the invention, adoption and maturity product of the product and industry sufficiently for future technologies to be built on top of it)" and "fixing a roof tile" as an example of each and find the difference to be something in the order of 10^9.
+We dispose of this idea quickly by calculating the difference between a new class of technology and a unit of work that can be comfortably handled by an individual. We may do this by taking a representative sample of each, such as (a) the notion of "scientific calculators (including the invention, adoption and maturity product of the product and industry sufficiently for future technologies to be built on top of it)" and (b) "fixing a roof tile" and find the scale difference to be roughly in the order of 10^9. \phantom{(XX)}
 
-To represent data at every scale in between these two extremes at sufficient resolution to be useful for the user is untenable.
+It is untenable to represent data at every scale in between these two extremes on a single diagram at sufficient resolution to be useful for the user. (While it is not infeasible that a visual tool could be used to represent this quantity of data, such a tool would likely take on the character of a virtual world \phantom{[3]}.)
 
 \subsection{Relating to the nature of progress}
 
-In addition to the two previous refutations being a strong argument against the utility of universal central diagrams, and even more-so when considered in combination, there is a fundamental point to be made with relation to how technological progress occurs. In particular, it is make the following two assumptions which we consider traps:
+In addition to the two previous refutations being arguments against the utility of universal, central diagrams, and even more strongly so when considered in combination, there is a fundamental point to be made with relation to how technological progress occurs. In particular, that the two following assumptions may be considered traps:
+
+\begin{quote}
 
 (1) that the majority of the work required relating to any technological innovation for civilization to be able to progress beyond it is related to the conception of the invention, and, relatedly:
 
 (2) that technological innovation is haphazard and entirely unpredictable, with there being multiple possible sequences whereby technology may be adopted.
+    
+\end{quote}
+
 
 While the single most valuable act involved in the development of a new technology may be the moment of inspiration at which it is invented, which perhaps concludes at the moment when a single person becomes convinced that the technology works to address a particular problem while being able to articulate every element of the solution required for it to work (or in sufficient detail that a layperson could intuit the rest, at least), this is naturally only the beginning of a technology's lifecycle.  The tendency for inventors to over-estimate the value of having a good idea and under-estimate the effort involved in finding a market for that idea has been well-documented.
 
@@ -101,4 +116,82 @@ There is no way around putting the work in to every technology and there is also
 
 Finally, as to the point of technologies always being successfully adopted in unaltering patterns (perhaps regardless of their time of invention), one may find this substantiated in the history every of possible arena, including the silhouettes of women's dresses (which changes from pencil-like, to bustle-like to hoop-like and back to pencil-like) to communications technology (which changes from being centralizing to decentralizing and back to centralizing) to software products (which bundle and then unbundle and then bundle again).
 
+\section{Implementation}
+
+\begin{quote}
+
+\textit{\phantom
+{Principle 2. Everything that can be represented as a diagram can be represented using a list and vice versa.}
+}
+\end{quote}
+
+
+We may consider an effective solution as hinging on answering the following two questions:
+
+\begin{quote}
+(1) Can both crowdfunding and crowdsourcing listings be represented using a single framework that is both cohesive and scaleable?
+
+(2) Can the use of diagrams engage and incent users to contribute to the network?
+
+\end{quote}
+Framed differently, our hypothetical technology must be both (1) \emph{innovative} and (2) \emph{marketable}.
+
+Because diagrams and lists are always interchangeable, it is not important to consider at this stage which tool is used to represent the data but rather how it is structured.
+
+Particularly, in order to scale the use of our system, it will be necessary for data to be stored as homogenously as possible. For example, it is not efficient to store pricing data in a database variously as numbers and as strings and there is very little that one can do with the data until a consistent format has been settled upon and all entries have been converted into that format.
+
+Compared to something like pricing data, job descriptions are woefully inefficient. In part, job briefings have had a dual function of acting like an advert, although the improved speed of creating and executing tasks likely makes this element superfluous and we can instead focus specifically on how to communicate what is to be done most elegantly, while allowing monetary rewards to be easily understood and compared and for the money to "speak for itself." More than that, if workers have considerable freedom to complete and move between tasks, it is feasible that they are able to create their own thesis or mission surrounding the tasks that they choose, provided they are given suitable tools to find and organise work (and we will return to this idea later).
+
+As we are interested in how information is communicated, we will also see that language is of great importance to our deconstruction.
+
+
+Suppose that what we are looking for is an elegant way to facilitate the communication of ideas and solutions amongst a community of people, in which money is continually transfered from issuers of ideas to issuers of solutions, with people being able to move back and forth between issuing ideas or solutions at any time.
+
+The fundamental unit at the heart of this (or any!) economy may be expressed as follows:
+
+Problem > Solution
+
+Or alternatively,
+
+Wish > Implementation
+
+For the time being, we will treat "idea" "problem", "proposal for a solution to a problem" and "wish" as the same, as we are currently most interested in the transition to a result/ implementation/desired outcome/solution.
+
+While there are different forms of financing this process, we will use what is perhaps the simplest, namely bounty-based model. In this model, a person issues the idea that they wish to have implemented and when a person delivers the desired result, they are rewarded by the issuing party. A successful result can be submitted at any time and the offer stands until the prize is paid or the issuer rescinds it (with some system of safeguards in place to prevent the issuer from not accepting a legitimately prizeworthy attempt or otherwise stealing the result of the participant's labor).
+
+We find that the "Idea" can be deconstructed concisely into the following elements, in order:
+
+Name > Directive > Question > Command
+
+The Name is the wish described as a title. This element is optional if the other elements are included. It may be expressed using a proper noun (titlecase) noun and is similar to how a toddler or oafish nuclear power plant worker might express what they want (i.e. "Mm... Doughnut!"). A Name may optionally be succeeded by an exclamation mark.
+
+The Directive is the Name described actively, in terms of what the wisher wants to do. This is perhaps the most important of the four elements as it is the least replaceable. While reasoning must be applied to turn an abstract concept into a directive, doing so is usually trivial. A directive may be expressed using all uppercase, without any end-of-sentence punctuation and begins with a verb.
+
+E.g. "EAT A DOUGHNUT"
+
+It is important to identify that it is not actually required yet to have any real contextual understanding of what is being expressed. What makes something a Directive is that it is intrinsically motivating. Unlike a Command, which requires a reason for doing, the Directive is distinguished by the fact that it acts as its own reward. At this stage of a wish or idea, it may be said that we simply want what we want.
+
+A Directive establishes that we have a desire to do something, whereas a Name simply establishes that a thing exists, and so often we will identity a wish when it is a directive. For example, as a verbal completion of the phrase, "I want to..."
+
+We express the directive without punctuation to help to represent how it is naturally understood by us, which is, like Names, in the form of sound. A Directive is not actually a sentence as even punctuation forms an unnecessary level of context at this stage.
+
+In other words, a baby may understand the phrases "give me" and "biscuit" and can use this alone to sufficiently both understand and communicate what it wants, prior to being able to convert this into a concept that can be meaningful independent of context (a sentence).
+
+A Question is phrased as one might expect - starting with a question word and ending with a question mark - and formulating it is the most lateral of the steps. Converting a Directive into a Question involves identifying what it is about the Directive that is unknown.
+
+Converting a Directive into a Question carries an implicit suggestion, although quite a logical one, that the distance between wanting to do something and doing that which one wants to be doing is ultimately a difference in perspective, or at least more of a difference in perspective than it is of anything else. Whether this principle is true or not, and whether this process bears a relationship to how a person naturally undertakes to get the things that he or she wants if it were to be articulated is less important for present purposes than the result that it yields. While in modern times it might be considered impractically idealistic (albeit true in the abstract), in a matter of language such as this we find that it offers a necessary level of precision that is otherwise unavailable to us.
+
+To turn a Directive into a Question, a person interrogates the Directive with a sentiment akin to, "If I know that I want to be doing this, than why aren't I?"
+
+If such a question can be phrased non-judgmentally and to the affirmative, it becomes something like, "What, if I knew, would lead me to be doing this thing that I want to do right now?"
+
+By asking this lateral question, the person for the first time in this process gives acknowledgment to the possibility that what is wanted is achievable and now has laid the foundation for a path to achieve it, as, necessarily, any true answer to the question involves the person the doing it (or else, it wouldn't be a true answer).
+
+The rest of the process of converting the idea into reality then becomes the almost perfunctory task of describing whatever actions may be taken that would feasibly offer the possibility of answering the posited question.
+
+Alternatively, if no actions can be found, one can simply refine the question. This would be akin to asking something in the nature of, "What would (or even might) be the first step to finding what the first step is?"
+
+Ultimately, one can become so specific with the question that is being posed that a failure to come up with an answer could only be accompanied by a total logjam.
+
+\end{multicols}
 \end{document}
